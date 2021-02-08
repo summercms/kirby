@@ -258,6 +258,22 @@ class FilesFieldTest extends TestCase
                         ]
                     ]
                 ]
+            ],
+            'options' => [
+                'api.allowImpersonation' => true
+            ],
+            'site' => [
+                'children' => [
+                    [
+                        'slug' => 'test-files',
+                        'template' => 'test-files',
+                        'files' => [
+                            ['filename' => 'a.jpg'],
+                            ['filename' => 'b.jpg'],
+                            ['filename' => 'c.jpg']
+                        ]
+                    ],
+                ]
             ]
         ]);
 

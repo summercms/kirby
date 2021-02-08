@@ -191,6 +191,25 @@ class PagesFieldTest extends TestCase
                     ['slug' => 'b'],
                     ['slug' => 'c'],
                 ]
+            ],
+            'options' => [
+                'api.allowImpersonation' => true
+            ],
+            'site' => [
+                'children' => [
+                    [
+                        'slug' => 'test-pages-1',
+                        'template' => 'test-pages'
+                    ],
+                    [
+                        'slug' => 'test-pages-2',
+                        'template' => 'test-pages'
+                    ],
+                    [
+                        'slug' => 'test-pages-3',
+                        'template' => 'test-pages'
+                    ],
+                ]
             ]
         ]);
 
