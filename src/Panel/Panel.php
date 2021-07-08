@@ -453,7 +453,7 @@ class Panel
         $kirby = kirby();
 
         // language switcher
-        if ($kirby->options('languages')) {
+        if ($kirby->option('languages')) {
             $session  = $kirby->session();
             $sessionLanguage = $session->get('panel.language', 'en');
             $language = get('language') ?? $sessionLanguage;
